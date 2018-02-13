@@ -2,7 +2,15 @@ body {
   margin: 0;
   padding: 0;
 }
-/*
+
+a {
+  color: seashell;
+}
+
+a:visited {
+  color: seashell;
+}
+
 .container {
   background-color: black;
   color: seashell;
@@ -12,11 +20,13 @@ body {
   text-align: center;
   width: 100%;
 }
-*/
+
 /* header */
 header {
-  height: 69px;
   border-bottom: 1px solid seashell;
+  display: flex;
+  justify-content: space-between;
+  height: 69px;
 }
 
 .logo {
@@ -26,17 +36,33 @@ header {
 /* mission */
 #mission {
   background-image: url("../images/img-mission-background.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;;
   margin: 0 auto;
   height: 700px;
   width: 1200px;
 }
 
+.headline {
+  background-color: black;
+  height: 130px;
+  width: 100%;
+}
+
 /* featured */
 #featured {
   margin: 0 auto;
-  min-height: 700px;
+  height: 700px;
   width: 1000px;
 }
+
+.product {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;;
+}
+
 .tea img {
   width: 300px;
 }
@@ -50,7 +76,14 @@ header {
 }
 
 .address {
-  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+}
+
+.address-box {
+  background-color: black;
+  display: inline-flex;
+  flex-direction: column;
   height: 300px;
   width: 300px;
 }
@@ -58,9 +91,9 @@ header {
 /* footer */
 .contact {
   height: 200px;
-  text-align: center;
 }
 
 .copyright {
   padding-left: 20px;
+  text-align: left;
 }
