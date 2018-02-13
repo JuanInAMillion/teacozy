@@ -102,8 +102,9 @@ nav span {
 
 .address-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 15px;
+  padding: 0 110px;
 }
 
 .address {
