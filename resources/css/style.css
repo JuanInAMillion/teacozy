@@ -1,6 +1,12 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: black;
+  opacity: 0.9;
+  color: seashell;
+  font-family: Helvetica;
+  font-size: 22px;
+  text-align: center;
 }
 
 a {
@@ -11,34 +17,43 @@ a:visited {
   color: seashell;
 }
 
-.container {
-  background-color: black;
-  color: seashell;
-  font-family: Helvetica;
-  font-size: 22px;
-  opacity: 0.9;
-  text-align: center;
-  width: 100%;
-}
-
 /* header */
+
 header {
+  background-color: black;
   border-bottom: 1px solid seashell;
   display: flex;
   justify-content: space-between;
   height: 69px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
 }
 
 .logo {
   height: 50px;
+  padding: 10px;
+}
+nav {
+  padding: 20px 0;
+}
+
+nav span {
+  padding: 0 10px;;
+}
+
+.container {
+  padding-top: 70px;
+  width: 100%;
 }
 
 /* mission */
+
 #mission {
-  background-image: url("../images/img-mission-background.jpg");
+  background-image: url(../images/img-mission-background.jpg);
   display: flex;
   justify-content: center;
-  align-items: center;;
+  align-items: center;
   margin: 0 auto;
   height: 700px;
   width: 1200px;
@@ -51,44 +66,59 @@ header {
 }
 
 /* featured */
+
 #featured {
   margin: 0 auto;
   height: 700px;
   width: 1000px;
 }
 
-.product {
+.tea-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;;
+  flex-wrap: wrap;
 }
 
-.tea img {
-  width: 300px;
+.tea {
+  padding: 0 15px;
+}
+
+.tea h4 {
+  margin-top: 10px;
 }
 
 /* locations */
+
 #locations {
-  background-image: url("../images/img-locations-background.jpg");
+  background-image: url(../images/img-locations-background.jpg);
   margin: 0 auto;
-  min-height: 500px;
+  height: 500px;
   width: 1200px;
 }
 
-.address {
-  display: flex;
-  justify-content: space-around;
+#locations h2 {
+  padding-top: 50px;
 }
 
-.address-box {
+.address-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.address {
   background-color: black;
-  display: inline-flex;
-  flex-direction: column;
   height: 300px;
   width: 300px;
 }
 
+.address span {
+  display: block;
+  padding: 20px 0;
+}
+
 /* footer */
+
 .contact {
   height: 200px;
 }
