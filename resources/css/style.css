@@ -34,12 +34,13 @@ header {
   height: 50px;
   padding: 10px;
 }
+
 nav {
   padding: 20px 0;
 }
 
 nav span {
-  padding: 0 10px;;
+  padding: 0 10px;
 }
 
 .container {
