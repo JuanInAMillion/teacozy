@@ -1,0 +1,26 @@
+@media only screen and (max-width: 480px) {
+  section {
+    width: 100%;
+    margin: 0;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    padding-top: 70px;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  .headline h3 {
+    font-size: 1rem;
+  }
+  .contact {
+    height: 200px;
+  }
+  .copyright {
+    padding: 0;
+    text-align: center;
+  }
+}
